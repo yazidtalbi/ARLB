@@ -1,0 +1,66 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
+
+const benefits = [
+  {
+    icon: "https://assets.website-files.com/6259e59720a6347d57a4fe10/62d50397cb5c40cb6eaaabfc_Rocket.svg",
+    color: "blue",
+    title: "Fast Travel",
+    description: "Build a beautiful website that is easy to navigate across all devices and browsers"
+  },
+  {
+    icon: "https://example.com/path/to/another-icon.svg",
+    color: "green",
+    title: "Efficient Performance",
+    description: "Optimize your website for speed and performance to keep your visitors engaged."
+  },
+  {
+    icon: "https://example.com/path/to/yet-another-icon.svg",
+    color: "red",
+    title: "Secure Transactions",
+    description: "Ensure secure transactions and protect user data with advanced security measures."
+  }
+  // Add more items as needed
+];
+
+---
+
+<div class='overview-section black'>
+  <div class='overview-wrapper'>
+    <h3 class='overview-h3-heading center'>
+      Superb features for a seamless user experience
+    </h3><div class='w-layout-grid overview-points-grid'>
+
+         {
+          benefits.map((item) => (
+     
+ <div
+        id='w-node-c5c57810-5f26-7041-db16-3840fc021b3c-f2954a2e'
+        class='overview-point-wrap'
+      >
+        <div class=`feature-icon ${item.color}` >
+          <img
+            src={item.icon}
+            loading='lazy'
+            alt=''
+            class='feature-icon-image'
+          />
+        </div><h6>{item.title}</h6><p class='overview-point-text'>
+          Build a beautiful website that is easy to navigate across all devices
+          and browsers
+        </p>
+      </div>
+
+      
+          ))
+        }
+
+
+
+
+
+
+    </div>
+  </div>
+</div>

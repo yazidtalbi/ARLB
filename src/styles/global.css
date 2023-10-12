@@ -7723,7 +7723,8 @@ blockquote {
 }
 
 .recent-blog-reading-time-div {
-  margin-left: 32px;
+    margin-left: 12px;
+    opacity: 50%;
 }
 
 .recent-blog-hero-image {
@@ -15216,13 +15217,13 @@ blockquote {
 
 .dropdown-list {
   width: 90%;
-  padding-top: 25px;
+  padding-top: 12px;
   background-color: transparent;
 }
 
 .dropdown-list.w--open {
   left: 0px;
-  top: 80px;
+  /* top: 80px; */
   right: 0px;
 }
 
@@ -23143,56 +23144,56 @@ blockquote {
 }
 @font-face {
   font-family: 'Boska variable';
-  src: url('../6259e59720a6340ca3a4fe59_Boska-Variable%20-%20Copy.ttf') format('truetype');
+  src: url('../../public/fonts/6259e59720a6340ca3a4fe59_Boska-Variable%20-%20Copy.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: auto;
 }
 @font-face {
   font-family: 'Satoshi variable';
-  src: url('../6259e59720a6349b71a4fe5b_Satoshi-Variable.ttf') format('truetype');
+  src: url('../../public/fonts/6259e59720a6349b71a4fe5b_Satoshi-Variable.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: auto;
 }
 @font-face {
   font-family: 'Boska variable';
-  src: url('../6259e59720a6340ca3a4fe59_Boska-Variable%20-%20Copy.ttf') format('truetype');
+  src: url('../../public/fonts/6259e59720a6340ca3a4fe59_Boska-Variable%20-%20Copy.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: auto;
 }
 @font-face {
   font-family: 'Satoshi variable';
-  src: url('../6259e59720a6349b71a4fe5b_Satoshi-Variable.ttf') format('truetype');
+  src: url('../../public/fonts/6259e59720a6349b71a4fe5b_Satoshi-Variable.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: auto;
 }
 @font-face {
   font-family: 'Satoshi variable';
-  src: url('../6259e59720a6349b71a4fe5b_Satoshi-Variable.ttf') format('truetype');
+  src: url('../../public/fonts/6259e59720a6349b71a4fe5b_Satoshi-Variable.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: auto;
 }
 @font-face {
   font-family: 'Satoshi variable';
-  src: url('../6259e59720a6349b71a4fe5b_Satoshi-Variable.ttf') format('truetype');
+  src: url('../../public/fonts/6259e59720a6349b71a4fe5b_Satoshi-Variable.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: auto;
 }
 @font-face {
   font-family: 'Boska';
-  src: url('../6259e59720a634530fa4ff19_Boska-BoldItalic.otf') format('opentype');
+  src: url('../../public/fonts/6259e59720a634530fa4ff19_Boska-BoldItalic.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
   font-display: auto;
 }
 @font-face {
   font-family: 'Boska';
-  src: url('../6259e59720a63477c2a4ff1a_Boska-Italic.otf') format('opentype');
+  src: url('../../public/fonts/6259e59720a63477c2a4ff1a_Boska-Italic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
   font-display: auto;

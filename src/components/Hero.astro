@@ -1,6 +1,8 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
-import { SITE_TITLE } from "../consts";
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+
+const {title} = Astro.props;
 ---
 
 <div class='home-2-feature-section'>
@@ -16,11 +18,14 @@ import { SITE_TITLE } from "../consts";
           />
         </div>
         <div class='heading-animation-div'>
-          <h2 class='h2-heading-56px margin-bottom-24px'>
-            Send your money
-            <span class='boska-variable-text-italic'>across boarder</span>
-             within seconds
-          </h2>
+          <h1 class='h1-heading-56px margin-bottom-24px '>
+             Service de
+            <span class='boska-variable-text-italic'>{title}</span>
+          
+          </h1>
+
+
+          
         </div>
         <div class='heading-animation-div'>
           <div class='body-1-20px'>
@@ -29,22 +34,7 @@ import { SITE_TITLE } from "../consts";
             Milestone.
           </div>
         </div>
-        <div class='heading-animation-div'>
-          <a
-            href='https://webflow.com/'
-            target='_blank'
-            class='link-block-wrapper w-inline-block'
-            ><div class='recent-blog-black-box'>
-              <img
-                src='../../assets/6259e59720a6347d57a4fe10/6259e59720a6349779a4fe5d_ArrowUpRight.svg'
-                loading='lazy'
-                alt=''
-                class='arrow-image-link-block'
-              />
-            </div>
-            <div class='recent-blog-bold-text-16px'>learn more</div></a
-          >
-        </div>
+        
       </div>
       <div class='home-feature-2-image-container'>
         <div class='image-animation-div'>
@@ -134,6 +124,6 @@ import { SITE_TITLE } from "../consts";
           class='blue-gradient-image'
         />
       </div>
-    </div>
+    </div> 
   </div>
 </div>

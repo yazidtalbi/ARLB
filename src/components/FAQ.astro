@@ -1,0 +1,155 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
+
+const faq = [
+  {
+    question: "What is Section 1 about?",
+    answer: "Section 1 contains items related to a specific topic. You can find more details here.",
+  },
+  {
+    question: "What does Section 2 include?",
+    answer: "Section 2 includes important tasks that need to be completed. Remember to prioritize your tasks.",
+  },
+  {
+    question: "What does Section 3 contain?",
+    answer: "Section 3 contains items related to a particular project. Make sure to collaborate with your team members.",
+  },
+  {
+    question: "What is Section 4 for?",
+    answer: "Section 4 includes items to buy during the weekend shopping. Don't forget to check for discounts and deals.",
+  },
+   {
+    question: "azdazd does Section 33453 contain?",
+    answer: "Section 3 contains items related to a particular project. Make sure to collaborate with your team members.",
+  },
+   {
+    question: "What does azdazdazv fvfdv 3 contain?",
+    answer: "Section 3 conSDVEVREtains items related to a parERVticular project. Make sure to collaborate with your team members.",
+  },
+];
+
+---
+
+<div class='faq-section'>
+  <div class='wrapper-1240px faq-flex' style="padding-bottom:50px">
+    <div class='integration-grid-container'>
+      <div style="position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+
+    height: 100%;
+    max-width: 360px;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;">
+
+         <h2 class='h2-heading-44px'>
+            Frequently asked
+            <span class='boska-variable-text-italic'>questions</span>
+          </h2>
+       
+        
+   
+        
+        <div class='integration-heading-wrapper'>
+        
+ 
+        </div><img
+          src='https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a6345d48a4ff14_Arrow_11.svg'
+          loading='lazy'
+          alt=''
+          class='integration-arrow'
+        /> 
+      </div>
+      <div class='integration-left-container'>
+        <div class='job-listing-tab-pane-wrapper'>
+          <div class='job-listing-collection-list-wrap w-dyn-list'>
+                <div class=' '>
+      <div class='w-layout-grid faq-grid'>
+        {
+          faq.map((item) => (
+            <div class='faq-container'>
+              <div class='faq-upper-container'>
+                <div class='faq-question-text'>{item.question}</div>
+                <div class='faq-cross-wrapper'>
+                  <img
+                    src='../assets/6259e59720a6347d57a4fe10/6259e59720a634885ea4fe6e_Plus%20Icon.svg'
+                    loading='lazy'
+                    alt=''
+                    class='faq-plus-icon'
+                  />
+                </div>
+              </div>
+              <div class='faq-bottom-container'>
+                <div class='faq-answer-text'>{item.answer}</div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ 
+
+    <div class='faq-gradient-background-div'>
+      <div class='yellow-gradient-div faq-yellow-div'>
+        <img
+          src='../assets/6259e59720a6347d57a4fe10/6259e59720a6342491a4ff05_Peach%20Gradient%20Image%20(1).png'
+          loading='lazy'
+          sizes='(max-width: 767px) 90vw, (max-width: 991px) 95vw, 940px'
+          srcset='
+                  https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a6342491a4ff05_Peach%2520Gradient%2520Image%2520(1)-p-500.png  500w,
+                  https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a6342491a4ff05_Peach%2520Gradient%2520Image%2520(1)-p-800.png  800w,
+                  https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a6342491a4ff05_Peach%20Gradient%20Image%20(1).png             1930w
+                '
+          alt=''
+          class='yellow-gradient-image'
+        />
+      </div>
+      <div class='green-gradient-div faq-green-div'>
+        <img
+          src='../assets/6259e59720a6347d57a4fe10/6259e59720a634e8eea4ff07_Green%20Oval%20Gradient%20(2).png'
+          loading='lazy'
+          sizes='(max-width: 767px) 90vw, (max-width: 991px) 78vw, 739px'
+          srcset='
+                  https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a634e8eea4ff07_Green%2520Oval%2520Gradient%2520(2)-p-500.png   500w,
+                  https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a634e8eea4ff07_Green%2520Oval%2520Gradient%2520(2)-p-800.png   800w,
+                  https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a634e8eea4ff07_Green%2520Oval%2520Gradient%2520(2)-p-1080.png 1080w,
+                  https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a634e8eea4ff07_Green%20Oval%20Gradient%20(2).png              2472w
+                '
+          alt=''
+          class='green-gradient-image'
+        />
+      </div>
+      <div class='blue-gradient-div faq-blue-div'>
+        <img
+          src='../assets/6259e59720a6347d57a4fe10/6259e59720a634837ba4ff06_Blue%20Oval%20Gradient%20(2).png'
+          loading='lazy'
+          sizes='(max-width: 767px) 90vw, (max-width: 991px) 78vw, 739px'
+          srcset='
+                  https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a634837ba4ff06_Blue%2520Oval%2520Gradient%2520(2)-p-500.png  500w,
+                  https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a634837ba4ff06_Blue%2520Oval%2520Gradient%2520(2)-p-800.png  800w,
+                  https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a634837ba4ff06_Blue%20Oval%20Gradient%20(2).png             1974w
+                '
+          alt=''
+          class='blue-gradient-image'
+        />
+      </div>
+    </div>
+  </div>
+</div>

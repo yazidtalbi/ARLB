@@ -1,0 +1,156 @@
+---
+const posts = [
+  {
+    type: "Design",
+    image: 'https://images.blush.design/74760cde0d8fffeb1f396ad8fe1ad6ac?w=500&auto=compress&cs=srgb',
+    title:
+      "The Worst Advice We've Ever Heard About Web Design",
+  },
+  {
+    type: "Marketing",
+    image: 'https://images.blush.design/afff201a0486036c4b8efaac686a6e6e?w=500&auto=compress&cs=srgb',
+    title:
+      "7 Things About Web Design Your Boss Wants To Know",
+  },
+  {
+    type: "Développement",
+    image: 'data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSI0OTguODQ5OTk5OTk5OTk5OSAxOTkuMjY0MzY3ODE2MDkyMSA4MzguOTc1MDAwMDAwMDAwMyAxMTc3LjQ3MTI2NDM2NzgxNjUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOmJsdXNoPSJodHRwOi8vZGVzaWduLmJsdXNoIiBvdmVyZmxvdz0idmlzaWJsZSIgd2lkdGg9IjgzOC45NzUwMDAwMDAwMDAzcHgiIGhlaWdodD0iMTE3Ny40NzEyNjQzNjc4MTY1cHgiPjxnIGlkPSJNYXN0ZXIvTWFya2V0aW5nL0VsZW1lbnRzIiBibHVzaDpoYXMtY3VzdG9taXphYmxlLWNvbG9ycz0idHJ1ZSIgYmx1c2g6dmlld0JveD0iNDk4Ljg0OTk5OTk5OTk5OTkgMjA2Ljk4NjE3NTExNTIwNzMgODI1LjM2OTk5OTk5OTk5OTggMTE1Mi45NDkzMDg3NTU3NjA1IiBibHVzaDppPSIwIj48ZyBpZD0iR3JvdXAgMTE3NiIgYmx1c2g6aT0iMC4wIj48cGF0aCBpZD0iUGF0aCIgZD0iTTYyNS43MjQgNzY5TDUxMCA4NjkuMTI0TDEwOTEuNjggOTcwTDEzMTcgODMyLjIzNlY3NjlINjI1LjcyNFoiIGZpbGw9IiNGNDk1QkIiIGJsdXNoOmk9IjAuMC4wIi8+PHBhdGggaWQ9IlBhdGggQ29weSIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02MjYuMjQ5IDc2OEgxMzE5VjgzNC4zMTVMMTA5Mi41IDk3M0w1MDcgODcxLjMxOUw2MjYuMjQ5IDc2OFpNMTMxNSA4MzEuMTU0Vjc3MUg2MjcuNzY2TDUxNiA4NjcuOTI2TDEwOTEuNzEgOTY4TDEzMTUgODMxLjE1NFoiIGZpbGw9ImJsYWNrIiBibHVzaDppPSIwLjAuMSIvPjxwYXRoIGlkPSJQYXRoXzIiIGQ9Ik02MjIuNDQ5IDc3MS45MjRMNTA5LjQ0OSA4NjguODg0VjEzNDkuOTJMNjIyLjQ0OSAxMjE5LjE0Vjc3MS45MjRaIiBmaWxsPSIjRkE4M0IzIiBibHVzaDppPSIwLjAuMiIvPjxwYXRoIGlkPSJQYXRoIENvcHkgMiIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02MjUgNzY4VjEyMjAuNDdMNTA3IDEzNTZWODY4LjQ4MUw2MjUgNzY4Wk02MjEgMTIxOC45N1Y3NzdMNTExIDg3MC40MzlWMTM0NUw2MjEgMTIxOC45N1oiIGZpbGw9ImJsYWNrIiBibHVzaDppPSIwLjAuMyIvPjxwYXRoIGlkPSJQYXRoXzMiIGQ9Ik03OTQuNDEyIDY1MUwxMDExIDgwNy4xNTdMNzY3IDkxNkw3OTQuNDEyIDY1MVoiIGZpbGw9IiM2NkM3RkYiIGJsdXNoOmk9IjAuMC40Ii8+PHBhdGggaWQ9IlBhdGggQ29weSAzIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTc5My4yMjkgNjQ3LjgxOEwxMDE1LjQ0IDgwOC4wMjlMNzY1LjEwNSA5MTkuNjk4TDc5My4yMjkgNjQ3LjgxOFpNMTAwNy40NiA4MDcuMjA4TDc5Ni40OTYgNjU1LjEwNUw3NjkuNzk2IDkxMy4yMjVMMTAwNy40NiA4MDcuMjA4WiIgZmlsbD0iYmxhY2siIGJsdXNoOmk9IjAuMC41Ii8+PHJlY3QgaWQ9IlJlY3RhbmdsZSIgeD0iNTA5IiB5PSI4NjgiIHdpZHRoPSI2OTYiIGhlaWdodD0iNDg4IiBmaWxsPSIjRkZFMUVEIiBibHVzaDppPSIwLjAuNiIvPjxwYXRoIGlkPSJSZWN0YW5nbGUgQ29weSIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01MDcuNDQ5IDg2Ni40NjJIMTIwNy40NVYxMzU4LjQ2SDUwNy40NDlWODY2LjQ2MlpNMTIwMy40NSAxMzU0LjQ2Vjg3MC40NjJINTExLjQ0OVYxMzU0LjQ2SDEyMDMuNDVaIiBmaWxsPSJibGFjayIgYmx1c2g6aT0iMC4wLjciLz48cGF0aCBpZD0iUGF0aF80IiBkPSJNMTMxNi41NSA3NzEuOTVMMTIwNS41NSA4NjkuMjQ1VjEzNTEuOTVMMTMxNi41NSAxMjIwLjcxVjc3MS45NVoiIGZpbGw9IiNGRkM2REQiIGJsdXNoOmk9IjAuMC44Ii8+PHBhdGggaWQ9IlBhdGggQ29weSA0IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEzMTkgNzY4VjEyMjEuOTFMMTIwNCAxMzU3Ljg3Vjg2OC44MDFMMTMxOSA3NjhaTTEzMTUgMTIyMC40NFY3NzYuODI1TDEyMDggODcwLjYxNFYxMzQ2Ljk1TDEzMTUgMTIyMC40NFoiIGZpbGw9ImJsYWNrIiBibHVzaDppPSIwLjAuOSIvPjxjaXJjbGUgaWQ9Ik92YWwiIGN4PSIxMTY5LjUiIGN5PSI2ODYuNSIgcj0iMTEyLjUiIGZpbGw9IiM3ODdFRkYiIGJsdXNoOmk9IjAuMC4xMCIvPjxwYXRoIGlkPSJPdmFsIENvcHkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTA1NS40NSA2ODYuOTYyQzEwNTUuNDUgNjIzLjcyNSAxMTA2LjcxIDU3Mi40NjIgMTE2OS45NSA1NzIuNDYyQzEyMzMuMTkgNTcyLjQ2MiAxMjg0LjQ1IDYyMy43MjUgMTI4NC40NSA2ODYuOTYyQzEyODQuNDUgNzUwLjE5OSAxMjMzLjE5IDgwMS40NjIgMTE2OS45NSA4MDEuNDYyQzExMDYuNzEgODAxLjQ2MiAxMDU1LjQ1IDc1MC4xOTkgMTA1NS40NSA2ODYuOTYyWk0xMjgwLjQ1IDY4Ni45NjJDMTI4MC40NSA2MjUuOTM0IDEyMzAuOTggNTc2LjQ2MiAxMTY5Ljk1IDU3Ni40NjJDMTEwOC45MiA1NzYuNDYyIDEwNTkuNDUgNjI1LjkzNCAxMDU5LjQ1IDY4Ni45NjJDMTA1OS40NSA3NDcuOTg5IDExMDguOTIgNzk3LjQ2MiAxMTY5Ljk1IDc5Ny40NjJDMTIzMC45OCA3OTcuNDYyIDEyODAuNDUgNzQ3Ljk4OSAxMjgwLjQ1IDY4Ni45NjJaIiBmaWxsPSJibGFjayIgYmx1c2g6aT0iMC4wLjExIi8+PHBhdGggaWQ9IlBhdGhfNSIgZD0iTTk1MSAyMjFMOTkwLjY1OSAzNDIuODQ3SDExMTlMMTAxNS4xNyA0MTguMTUzTDEwNTQuODMgNTQwTDk1MSA0NjQuNjk0TDg0Ny4xNyA1NDBMODg2LjgzIDQxOC4xNTNMNzgzIDM0Mi44NDdIOTExLjM0MUw5NTEgMjIxWiIgZmlsbD0iI0ZFQkE1NyIgYmx1c2g6aT0iMC4wLjEyIi8+PHBhdGggaWQ9IlBhdGggQ29weSA1IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTk1MS40NDkgMjE1TDk5Mi41NiAzNDEuMzA5TDExMjUuNjEgMzQxLjMwOUwxMDE3Ljk3IDQxOS4zNzhMMTA1OS4wOCA1NDUuNjkzTDk1MS40NDggNDY3LjYyN0w4NDMuODE0IDU0NS42OTNMODg0LjkyNiA0MTkuMzc4TDc3Ny4yODUgMzQxLjMwOUw5MTAuMzM3IDM0MS4zMDlMOTUxLjQ0OSAyMTVaTTk1MS40NDkgMjI3LjkyM0w5MTMuMjQyIDM0NS4zMDlMNzg5LjYxMyAzNDUuMzA5TDg4OS42MzEgNDE3Ljg1TDg1MS40MjUgNTM1LjIzTDk1MS40NDkgNDYyLjY4NkwxMDUxLjQ3IDUzNS4yM0wxMDEzLjI3IDQxNy44NUwxMTEzLjI4IDM0NS4zMDlMOTg5LjY1NiAzNDUuMzA5TDk1MS40NDkgMjI3LjkyM1oiIGZpbGw9ImJsYWNrIiBibHVzaDppPSIwLjAuMTMiLz48cGF0aCBpZD0iUGF0aF82IiBkPSJNNjEzLjE3IDQzMi41NzJDNjE2LjUyNyA0MTQuNDc2IDY0Mi40NzMgNDE0LjQ3NiA2NDUuODMgNDMyLjU3MlY0MzIuNTcyQzY0OC4yMzIgNDQ1LjUxOCA2NjQuMDM3IDQ1MC42NDkgNjczLjU5MiA0NDEuNTg3VjQ0MS41ODdDNjg2Ljk1MyA0MjguOTE4IDcwNy45NDQgNDQ0LjE1OSA3MDAuMDE2IDQ2MC43NzFWNDYwLjc3MUM2OTQuMzQ1IDQ3Mi42NTQgNzA0LjExMyA0ODYuMDkgNzE3LjE3NSA0ODQuMzcyVjQ4NC4zNzJDNzM1LjQzMyA0ODEuOTcxIDc0My40NTEgNTA2LjYzMiA3MjcuMjY3IDUxNS40MTNWNTE1LjQxM0M3MTUuNjg5IDUyMS42OTYgNzE1LjY4OSA1MzguMzA0IDcyNy4yNjcgNTQ0LjU4N1Y1NDQuNTg3Qzc0My40NTEgNTUzLjM2OCA3MzUuNDMzIDU3OC4wMjkgNzE3LjE3NSA1NzUuNjI4VjU3NS42MjhDNzA0LjExMyA1NzMuOTEgNjk0LjM0NSA1ODcuMzQ2IDcwMC4wMTYgNTk5LjIyOVY1OTkuMjI5QzcwNy45NDQgNjE1Ljg0MSA2ODYuOTUzIDYzMS4wODIgNjczLjU5MiA2MTguNDEzVjYxOC40MTNDNjY0LjAzNyA2MDkuMzUxIDY0OC4yMzIgNjE0LjQ4MiA2NDUuODMgNjI3LjQyOFY2MjcuNDI4QzY0Mi40NzMgNjQ1LjUyNCA2MTYuNTI3IDY0NS41MjQgNjEzLjE3IDYyNy40MjhWNjI3LjQyOEM2MTAuNzY4IDYxNC40ODIgNTk0Ljk2MyA2MDkuMzUxIDU4NS40MDcgNjE4LjQxM1Y2MTguNDEzQzU3Mi4wNDggNjMxLjA4MiA1NTEuMDU2IDYxNS44NDEgNTU4Ljk4NCA1OTkuMjI5VjU5OS4yMjlDNTY0LjY1NiA1ODcuMzQ2IDU1NC44ODggNTczLjkxIDU0MS44MjYgNTc1LjYyOFY1NzUuNjI4QzUyMy41NjcgNTc4LjAyOSA1MTUuNTQ5IDU1My4zNjggNTMxLjczNCA1NDQuNTg3VjU0NC41ODdDNTQzLjMxMSA1MzguMzA0IDU0My4zMTEgNTIxLjY5NiA1MzEuNzM0IDUxNS40MTNWNTE1LjQxM0M1MTUuNTQ5IDUwNi42MzIgNTIzLjU2NyA0ODEuOTcxIDU0MS44MjYgNDg0LjM3MlY0ODQuMzcyQzU1NC44ODggNDg2LjA5IDU2NC42NTYgNDcyLjY1NCA1NTguOTg0IDQ2MC43NzFWNDYwLjc3MUM1NTEuMDU2IDQ0NC4xNTkgNTcyLjA0OCA0MjguOTE4IDU4NS40MDcgNDQxLjU4N1Y0NDEuNTg3QzU5NC45NjMgNDUwLjY0OSA2MTAuNzY4IDQ0NS41MTggNjEzLjE3IDQzMi41NzJWNDMyLjU3MloiIGZpbGw9IiNGRjU5MDAiIGJsdXNoOmk9IjAuMC4xNCIvPjxwYXRoIGlkPSJQYXRoIENvcHkgNiIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01ODcuNDg4IDQ0MC44MzNDNTk1LjkxNiA0NDguNDc4IDYwOS41NjIgNDQzLjk0MSA2MTEuNjU0IDQzMi42NjlMNjExLjc3MyA0MzIuMDc1QzYxNS45MzIgNDEyLjY2NSA2NDMuOTMyIDQxMi41MTYgNjQ4LjEyOCA0MzIuMDc3TDY0OC4zMTMgNDMzLjAwNEM2NTAuNjA1IDQ0NC4wMDYgNjY0LjA1IDQ0OC40MTkgNjcyLjM5NCA0NDAuODUxTDY3My4xMTIgNDQwLjE4N0M2ODcuODkzIDQyNi45MjggNzEwLjYzNSA0NDMuMjU1IDcwMi41MTIgNDYxLjU3Mkw3MDIuMTI4IDQ2Mi40MDVDNjk3LjUxMSA0NzIuNjUxIDcwNS43OTIgNDg0LjExNyA3MTYuOTk1IDQ4Mi44OTVMNzE3Ljk2NiA0ODIuNzhDNzM3LjcyMSA0ODAuNzM3IDc0Ni41MTcgNTA3LjMwNiA3MjkuMTc0IDUxNy4zNTJMNzI4LjM3MiA1MTcuOEM3MTguNjEgNTIzLjM3OSA3MTguNTY1IDUzNy41MTggNzI4LjM0NyA1NDMuMTFMNzI5LjIgNTQzLjU4OEM3NDYuMzg2IDU1My41MzggNzM3Ljg3NSA1ODAuMiA3MTcuOTM2IDU3OC4xNDFMNzE3LjAyNCA1NzguMDMzQzcwNS44NDUgNTc2LjgxMSA2OTcuNDkyIDU4OC4yMjUgNzAyLjExNSA1OTguNDkzTDcwMi41MjUgNTk5LjM4QzcxMC41NzYgNjE3LjUyOCA2ODguMDExIDYzNC4wOTYgNjczLjA5IDYyMC43MTdMNjcyLjQxNiA2MjAuMDk0QzY2NC4wOTEgNjEyLjU0IDY1MC42MTggNjE2Ljg2NyA2NDguMzE5IDYyNy44OTFMNjQ4LjEyOCA2MjguODVDNjQzLjk2OCA2NDguMjU5IDYxNS45NjkgNjQ4LjQwOSA2MTEuNzY3IDYyOC44Mkw2MTEuNTg4IDYyNy45MkM2MDkuMjk1IDYxNi45MTkgNTk1Ljg1IDYxMi41MDYgNTg3LjUwNiA2MjAuMDc0TDU4Ni43ODggNjIwLjczOEM1NzIuMDA4IDYzMy45OTcgNTQ5LjI2NSA2MTcuNjcgNTU3LjM4OCA1OTkuMzUzTDU1Ny43NzMgNTk4LjUyQzU2Mi4zODkgNTg4LjI3NCA1NTQuMTA4IDU3Ni44MDggNTQyLjkwNiA1NzguMDI5TDU0MS45MzUgNTc4LjE0NEM1MjIuMTc4IDU4MC4xODggNTEzLjM4MyA1NTMuNjE5IDUzMC43MjcgNTQzLjU3M0w1MzEuNTI4IDU0My4xMjVDNTQxLjI5IDUzNy41NDYgNTQxLjMzNCA1MjMuNDA3IDUzMS41NTQgNTE3LjgxNEw1MzEuMjMgNTE3LjYzNEM1MTMuMzQzIDUwNy45MjggNTIxLjgyMyA0ODAuNzA0IDU0MS45NjUgNDgyLjc4NEw1NDIuODc3IDQ4Mi44OTJDNTU0LjA1NSA0ODQuMTE0IDU2Mi40MDkgNDcyLjcgNTU3Ljc4NiA0NjIuNDMyTDU1Ny4zNzYgNDYxLjU0NEM1NDkuMzI0IDQ0My4zOTcgNTcxLjg5IDQyNi44MjggNTg2LjgxIDQ0MC4yMDdMNTg3LjQ4OCA0NDAuODMzWk02NDQuMjEyIDQzMi44ODlMNjQ0LjExMiA0MzIuNDU2QzY0MC40NDggNDE3LjQzNCA2MTguNDY5IDQxNy44NjEgNjE1LjU4NyA0MzMuMzk5TDYxNS41MDEgNDMzLjgzMUM2MTIuNTQyIDQ0OC4wMTggNTk1LjA4MSA0NTMuNTUzIDU4NC41MDIgNDQzLjUxOUw1ODQuMTE5IDQ0My4xNjdDNTcyLjMyIDQzMi41ODYgNTU0LjM2MyA0NDUuOTY1IDU2MS4yNDkgNDYwLjM5Mkw1NjEuNDI0IDQ2MC43NjlDNTY3LjM4OSA0NzQuMDE3IDU1Ni40NzEgNDg4LjcxOSA1NDIuMDQzIDQ4Ni44Mkw1NDEuNTI2IDQ4Ni43NTlDNTI1Ljc1NyA0ODUuMTMyIDUxOS4xIDUwNi41MDEgNTMzLjE1NyA1MTQuMTI4TDUzMy41MiA1MTQuMzMxQzU0Ni4xMzcgNTIxLjU0NSA1NDUuOTUyIDUzOS44NTMgNTMzLjE2MiA1NDYuNzk0TDUzMi43MDggNTQ3LjA0OEM1MTguOTk0IDU1NC45OTEgNTI2LjE3NyA1NzYuMTkgNTQyLjAzNyA1NzQuMTA1TDU0Mi40NSA1NzQuMDU2QzU1Ni44OTkgNTcyLjQ3OSA1NjcuNTE3IDU4Ny4zOTkgNTYxLjI1MSA2MDAuNTI4TDU2MS4wMzQgNjAxQzU1NC42MTEgNjE1LjQ4MiA1NzIuODkzIDYyOC40MTMgNTg0LjQ5NyA2MTcuNDA5TDU4NC44MDIgNjE3LjEyNkM1OTUuNTY1IDYwNy4zNjQgNjEyLjkyOCA2MTMuMTk3IDYxNS41ODEgNjI3LjQ5OUw2MTUuNjgzIDYyOC4wMDlDNjE5LjAwNiA2NDMuNDk3IDY0MS40MDIgNjQzLjIyMSA2NDQuMzE4IDYyNy41MDRMNjQ0LjM5OCA2MjcuMDk2QzY0Ny4zNjUgNjEyLjg3NSA2NjQuODQzIDYwNy4zOTQgNjc1LjM5OCA2MTcuNDA1TDY3NS43ODEgNjE3Ljc1OEM2ODcuNTgxIDYyOC4zMzkgNzA1LjUzNyA2MTQuOTYgNjk4LjY1MiA2MDAuNTMzTDY5OC40NzcgNjAwLjE1NkM2OTIuNTEyIDU4Ni45MDggNzAzLjQyOSA1NzIuMjA1IDcxNy44NTggNTc0LjEwNEw3MTguMzc1IDU3NC4xNjVDNzM0LjE0MyA1NzUuNzkzIDc0MC44IDU1NC40MjMgNzI2Ljc0NCA1NDYuNzk2TDcyNi4zODEgNTQ2LjU5NEM3MTMuNzYyIDUzOS4zOCA3MTMuOTQ4IDUyMS4wNzIgNzI2LjczOSA1MTQuMTMxTDcyNy4xOTMgNTEzLjg3N0M3NDAuOTA2IDUwNS45MzMgNzMzLjcyMyA0ODQuNzM1IDcxNy44NjQgNDg2LjgyTDcxNy40NTEgNDg2Ljg2OUM3MDMuMDAxIDQ4OC40NDUgNjkyLjM4MyA0NzMuNTI2IDY5OC42NSA0NjAuMzk3TDY5OC44NjcgNDU5LjkyNUM3MDUuMjg5IDQ0NS40NDMgNjg3LjAwOCA0MzIuNTEyIDY3NS40MDMgNDQzLjUxNkw2NzUuMDk4IDQ0My43OThDNjY0LjMzNSA0NTMuNTYgNjQ2Ljk3MiA0NDcuNzI4IDY0NC4zMTkgNDMzLjQyNkw2NDQuMjEyIDQzMi44ODlaIiBmaWxsPSJibGFjayIgYmx1c2g6aT0iMC4wLjE1Ii8+PC9nPjwvZz48L3N2Zz4=',
+    title:
+      "The History Of Web Design in Brief",
+  },
+
+];
+
+
+
+
+---
+<style>
+        a:link {
+    color: #000; /* Set the desired text color for unvisited links */
+    text-decoration: none; /* Remove the underline for unvisited links */
+}
+
+/* Styling visited links */
+a:visited {
+    color: #000; /* Set the desired text color for visited links */
+    text-decoration: none; /* Remove the underline for visited links */
+}
+</style>
+
+<div class='overview-wrapper'>
+  <div class='overview-top-wrapper'>
+    <div class='home-2-recent-blog-upper-wrap'>
+      <h2
+        class='h2-heading-56px'
+        style='max-width: 810px; margin-bottom: 40px;'
+      >
+        Découvrez nos meilleures <span class='boska-variable-text-italic'
+          >astuces techniques</span
+        > ainsi que les <span class='boska-variable-text-italic'>tendances</span
+        > du monde numérique.
+      </h2><a href='/blog' class='link-block-wrapper no-margin w-inline-block'
+        ><div
+          class='recent-blog-black-box'
+          style='transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; background-color: rgb(0, 0, 0);'
+        >
+          <img
+            src='https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a6349779a4fe5d_ArrowUpRight.svg'
+            loading='lazy'
+            alt=''
+            class='arrow-image-link-block'
+            style='filter: invert(0%);'
+          />
+        </div><div class='recent-blog-bold-text-16px'>Derniers articles</div></a
+      >
+    </div>
+  </div>
+
+  <div class='w-layout-grid overview-grid'>
+
+
+  {posts.map((item) => (
+    
+
+    <div
+      class='about-3-press-hero-wrapper'
+      style='opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;'
+    
+    >
+      <img
+        src={item.image}
+        loading='lazy'
+      
+        alt=''
+        class='about-3-press-item-icon' style="  max-height:220px"
+      />
+
+      <a
+        href='/blog'
+        data-w-id='5068ba5a-f1d7-d9b7-585a-241623b17d6c'
+        class='overview-grid-wrap w-inline-block'
+        ><div class='recent-blog-text-upper-wrapper'>
+          <div 
+            style='
+                                  background-color: hsla(
+                                    56.25000000000001,
+                                    100%,
+                                    65.49%,
+                                    1
+                                  );
+                                '
+            class='recent-blog-category-text-span type'
+          >
+            {item.type}
+          </div><div class='recent-blog-reading-time-div'>
+            <div class='reading-time-text-14px-bold'>· 8 min read</div>
+          </div>
+        </div>
+        
+        <div class="home-2-blog-item-heading" style="  text-align: left;    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit the number of lines to 2 */
+    -webkit-box-orient: vertical;">   {item.title}</div>
+        
+     
+      </a>
+    </div>
+  ))}
+ 
+
+
+
+
+
+    
+  </div>
+</div>
+
+<script>
+// Assuming item.type contains 'design', 'dev', or 'marketing'
+
+const elements = document.querySelectorAll('.type');
+
+elements.forEach((element: HTMLElement) => {
+    const type = element.textContent || ''; // Get the text content of the element
+
+    switch (type.trim().toLowerCase()) {
+        case 'design':
+            element.style.backgroundColor = 'hsla(136.70103092783503, 100.00%, 80.98%, 1.00)'; // Set custom color for design type
+            break;
+        case 'dév':
+            element.style.backgroundColor = 'hsla(56.25000000000001, 100.00%, 65.49%, 1.00)'; // Set custom color for development type
+            break;
+        case 'marketing':
+            element.style.backgroundColor = 'hsla(274.2857142857143, 100.00%, 82.16%, 1.00)'; // Set custom color for marketing type
+            break;
+        default:
+            // Handle unknown type
+            break;
+    }
+});
+ 
+</script>

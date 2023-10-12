@@ -1,0 +1,138 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
+
+const services = [
+  {
+    service: "Branding",
+    description:
+      "Identité visuelle forte à travers des solutions de logo, de couleur et de police.",
+    link: "google.com",
+  },
+  {
+    service: "UI/UX Design",
+    description:
+      "Des produits modernes assurant une interaction fluide sur toutes les plateformes.",
+    link: "google.com",
+  },
+
+  {
+    service: "Web Design",
+    description:
+      "Des sites web captivants qui attirent les utilisateurs et génèrent des conversions.",
+    link: "google.com",
+  },
+  {
+    service: "Conception des applications mobiles",
+    description:
+      "Interfaces captivantes et faciles à utiliser pour iOS et Android.",
+    link: "google.com",
+  },
+  {
+    service: "Conception de Landing Page",
+    description:
+      "Pages web convertissant les visiteurs en prospects ou clients.",
+    link: "google.com",
+  },
+];
+
+const limitedServices = services.slice(0, 2);
+---
+
+<div class='integration-hero-section'>
+  <div
+    class='wrapper-1160px integration-hero-flex wrapper-1240px faq-flex'
+    style='padding-bottom:50px'
+  >
+    <div class='home-integration-upper-wrapper' style='margin: 48px 0 48px 0;'>
+      <div class='home-integration-text-wrapper'>
+        <div
+          class='heading-animation-div'
+          style='opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;'
+        >
+          <h1 class='h2-heading-56px margin-bottom-24px'>
+            Services
+            <span class='boska-variable-text-italic'> Connexes</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class='w-layout-grid overview-grid' data-astro-cid-fjwk6imu='' style="grid-template-columns: 1fr 1fr;">
+
+
+
+ {limitedServices.map((item) => (
+              
+      <div
+        class='about-3-press-hero-wrapper'
+        style='max-width: 734px;opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;    display: flex;
+   '
+        data-astro-cid-fjwk6imu=''
+      >
+        <a
+          href='/blog'
+          data-w-id='5068ba5a-f1d7-d9b7-585a-241623b17d6c'
+          class='overview-grid-wrap w-inline-block'
+          data-astro-cid-fjwk6imu=''
+          ><div
+            class='recent-blog-text-upper-wrapper'
+            data-astro-cid-fjwk6imu=''
+          >
+            <div
+              class='recent-blog-reading-time-div'
+              data-astro-cid-fjwk6imu=''
+            >
+            </div>
+          </div><div
+            class='home-2-blog-item-heading'
+            style='  text-align: left;    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit the number of lines to 2 */
+    -webkit-box-orient: vertical;'
+            data-astro-cid-fjwk6imu=''
+          >
+             {item.service}
+          </div></a
+        >
+
+        <div class='job-listing-sub-wrapper'>
+          <div class='body-1-20px' style='opacity:75%'>
+             {item.description}
+            Identité visuelle forte à travers des solutions de logo, de couleur
+            et de police.
+          </div>
+        </div>
+        <a
+          href={item.link}
+          target='_blank'
+          class='link-block-wrapper press-hero-wrapper w-inline-block'
+          ><div
+            class='recent-blog-black-box'
+            style='transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; background-color: rgb(0, 0, 0);'
+          >
+            <img
+              src='https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a6349779a4fe5d_ArrowUpRight.svg'
+              loading='lazy'
+              alt=''
+              class='arrow-image-link-block'
+              style='filter: invert(0%);'
+            />
+          </div><div class='recent-blog-bold-text-16px'>En savoir plus</div></a
+        >
+      </div>
+                ))
+              }
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>

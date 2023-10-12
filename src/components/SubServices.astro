@@ -1,0 +1,165 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
+
+const services = [
+  {
+    service: "Branding",
+    description:
+      "Identité visuelle forte à travers des solutions de logo, de couleur et de police.",
+    link: "google.com",
+  },
+  {
+    service: "UI/UX Design",
+    description:
+      "Des produits modernes assurant une interaction fluide sur toutes les plateformes.",
+    link: "google.com",
+  },
+
+  {
+    service: "Web Design",
+    description:
+      "Des sites web captivants qui attirent les utilisateurs et génèrent des conversions.",
+    link: "google.com",
+  },
+  {
+    service: "Conception des applications mobiles",
+    description:
+      "Interfaces captivantes et faciles à utiliser pour iOS et Android.",
+    link: "google.com",
+  },
+  {
+    service: "Conception de Landing Page",
+    description:
+      "Pages web convertissant les visiteurs en prospects ou clients.",
+    link: "google.com",
+  },
+];
+---
+
+<div class='integration-hero-section'>
+  <div
+    class='wrapper-1160px integration-hero-flex wrapper-1240px faq-flex'
+    style='padding-bottom:50px'
+  >
+    <div class='home-integration-upper-wrapper' style="margin: 48px 0 48px 0;">
+      <div class='home-integration-text-wrapper'>
+        <div
+          class='heading-animation-div'
+          style='opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;'
+        >
+       <h1 class='h2-heading-56px margin-bottom-24px'>
+        <span class='boska-variable-text-italic'>Design</span> services
+      </h1>
+        </div>
+      </div>  
+    </div>
+
+
+    <div class='integration-grid-container'>
+      <div class=''>
+        <div class='job-listing-tab-pane-wrapper'>
+          <div class='job-listing-collection-list-wrap w-dyn-list'>
+            <div role='list' class='job-listing-collection-list w-dyn-items'>
+              {
+                services.map((item) => (
+                  <div
+                    role='listitem'
+                    class='job-listing-collection-item w-dyn-item'
+                  >
+                    <a
+                      href={item.link}
+                      class='job-listing-hero-container w-inline-block' style="    justify-content: space-around;"
+                    >
+                      <>
+                         <div
+                          class='job-listing-arrow-wrapper'
+                          style='transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;'
+                        >
+                          <img
+                            alt=''
+                            loading='lazy'
+                            src='https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a6349779a4fe5d_ArrowUpRight.svg'
+                            class='job-listing-arrow-icon'
+                          />
+                        </div>
+                        <div class='job-listing-hero-text-wrapper'>
+                          <>
+                            <div
+                              class='job-listing-job-title'
+                              style='margin-top: 0px; margin-bottom: 0px; font-size: 32px; line-height: 48px; font-weight: 700; letter-spacing: -0.01em;'
+                            >
+                              {item.service}
+                            </div>
+                            <div class='job-listing-sub-wrapper'>
+                              <div class='body-1-20px' style='opacity:75%'>
+                                {item.description}
+                              </div>
+                            </div>
+                          </>
+                        </div>
+                     
+                      </>
+                    </a>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='integration-right-container' style='text-align:left'>
+        <div class='integration-gradient-div'>
+          <div class='green-gradient-div integration-green-div'>
+            <img
+              src='https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a634e8eea4ff07_Green%20Oval%20Gradient%20(2).png'
+              loading='lazy'
+              alt=''
+              sizes='(max-width: 479px) 100vw, 502px'
+              srcset='https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a634e8eea4ff07_Green%2520Oval%2520Gradient%2520(2)-p-500.png 500w, https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a634e8eea4ff07_Green%2520Oval%2520Gradient%2520(2)-p-800.png 800w, https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a634e8eea4ff07_Green%2520Oval%2520Gradient%2520(2)-p-1080.png 1080w, https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a634e8eea4ff07_Green%20Oval%20Gradient%20(2).png 2472w'
+              class='green-gradient-image'
+            />
+          </div><div class='blue-gradient-div integration-blue-div'>
+            <img
+              src='https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a634837ba4ff06_Blue%20Oval%20Gradient%20(2).png'
+              loading='lazy'
+              alt=''
+              sizes='382px'
+              srcset='https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a634837ba4ff06_Blue%2520Oval%2520Gradient%2520(2)-p-500.png 500w, https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a634837ba4ff06_Blue%2520Oval%2520Gradient%2520(2)-p-800.png 800w, https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a634837ba4ff06_Blue%20Oval%20Gradient%20(2).png 1974w'
+              class='blue-gradient-image'
+            />
+          </div>
+        </div>
+        <div style='flex-shrink: 0; margin-bottom:40px'>
+          <img
+            src='https://assets.website-files.com/6259e59720a6347d57a4fe10/62b45a700c89b6e3e1e925ed_Group%20970%20(1).png'
+            alt='Avatar'
+            style='width: 80px; height: 80px; border-radius: 50%;'
+          />
+        </div>
+        <div class='integration-heading-wrapper'>
+          <h3 class='job-listing-job-title'>
+            Voici Youssef, <span class='boska-variable-text-opacity-70'
+              >expert conseiller</span
+            > chez Arlibera. Il vous guidera vers le service qui convient le
+            plus à vos besoins.
+          </h3>
+        </div>
+
+        <!-- <img
+          src='https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a6345d48a4ff14_Arrow_11.svg'
+          loading='lazy'
+          alt=''
+          class='integration-arrow'
+        />  -->
+        <input
+          type='submit'
+          value='Poser une question'
+          data-wait='Please wait...'
+          class='integration-submit-button w-button'
+          style='margin-top:40px'
+        />
+      </div>
+    </div>
+  </div>
+</div>
