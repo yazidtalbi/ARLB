@@ -2,6 +2,8 @@
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
 
+const {title}=Astro.props
+
 const benefits = [
   {
     icon: "https://assets.website-files.com/6259e59720a6347d57a4fe10/62d50397cb5c40cb6eaaabfc_Rocket.svg",
@@ -29,7 +31,7 @@ const benefits = [
 <div class='overview-section black'>
   <div class='overview-wrapper'>
     <h3 class='overview-h3-heading center'>
-      Superb features for a seamless user experience
+      {title}
     </h3><div class='w-layout-grid overview-points-grid'>
 
          {

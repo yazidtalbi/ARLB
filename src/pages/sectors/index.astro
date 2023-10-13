@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Actions from "../../components/Actions.astro"; 
+import Benefits from "../../components/Benefits.astro";
+import FAQ from "../../components/FAQ.astro";
+import SubServices from "../../components/SubServices.astro";
+import BlogSection from "../../components/BlogSection.astro";
+import Cta from "../../components/Cta.astro";
+import Projects from "../../components/Projects.astro";
+import HeroSector from "../../components/HeroSector.astro";
+
+const checklist = [
+  "Complete the research phase",
+  "Create wireframes for the user interface",
+  "Develop the core functionality",
+  "Implement responsive design for all devices",
+];
+---
+
+<BaseLayout title='Innovateurs'>
+  <HeroSector   
+    checklist={checklist}
+       image={image}/>
+  <Benefits title="Nos expertises garantissent un résultat optimal"/>
+  <SubServices title="Services recommendés" />
+  <Projects />
+  <FAQ />
+  <BlogSection />
+  <Cta />
+</BaseLayout>

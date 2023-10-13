@@ -39,10 +39,16 @@ const services = [
 
 <div class='integration-hero-section'>
   <div
-    class='wrapper-1160px integration-hero-flex wrapper-1240px faq-flex'
-    style='padding-bottom:50px'
+    class=' integration-hero-flex wrapper-1240px faq-flex'
+    style="padding-top: 100px 0 100px 0;"
   >
-    <div class='home-integration-upper-wrapper' style="margin: 48px 0 48px 0;">
+    <div class='integration-grid-container'>
+      <div class=''>
+        <div class='job-listing-tab-pane-wrapper'>
+          <div class='job-listing-collection-list-wrap w-dyn-list'>
+            <div role='list' class='job-listing-collection-list w-dyn-items'>
+
+ <div class='home-integration-upper-wrapper' style="margin: 0px 0 0px 0;">
       <div class='home-integration-text-wrapper'>
         <div
           class='heading-animation-div'
@@ -55,12 +61,6 @@ const services = [
       </div>  
     </div>
 
-
-    <div class='integration-grid-container'>
-      <div class=''>
-        <div class='job-listing-tab-pane-wrapper'>
-          <div class='job-listing-collection-list-wrap w-dyn-list'>
-            <div role='list' class='job-listing-collection-list w-dyn-items'>
               {
                 services.map((item) => (
                   <div
@@ -146,12 +146,12 @@ const services = [
           </h3>
         </div>
 
-        <!-- <img
+         <img
           src='https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a6345d48a4ff14_Arrow_11.svg'
           loading='lazy'
           alt=''
           class='integration-arrow'
-        />  -->
+        /> 
         <input
           type='submit'
           value='Poser une question'

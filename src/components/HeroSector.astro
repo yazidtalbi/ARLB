@@ -1,25 +1,8 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
 
-const {title, description, type, image} = Astro.props;
-
-  const custom = title 
-
-  let modifiedTitle = custom;
-
-
- 
-
-  if (type.startsWith('Sector')) {
-    modifiedTitle = 'Secteurs des ';
-} else if (type.startsWith('Service')) {
-    modifiedTitle = 'Service de '
-} else {
-    modifiedTitle = '';
-}
-
- 
+const { title, description, type, image, checklist } = Astro.props;
 ---
 
 <div class='home-2-feature-section'>
@@ -35,21 +18,26 @@ const {title, description, type, image} = Astro.props;
           />
         </div>
         <div class='heading-animation-div'>
-        
-
-           <h1 class='h1-heading-56px margin-bottom-24px'>
-      {modifiedTitle}<span class='boska-variable-text-italic'>{title}</span>
-    </h1>
-
-
-          
+          <h1 class='h1-heading-56px margin-bottom-24px'>
+            Secteur des <span class='boska-variable-text-italic'>{title}</span>
+          </h1>
         </div>
-        <div class='heading-animation-div'>
-          <div class='body-1-20px'>
-            {description}
-          </div>
-        </div>
-        
+
+        {
+          checklist.map((item) => (
+            <div class='pricing-plan-pointers'>
+              <>
+                <img
+                  src='https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a6349656a4fe88_CheckCircle.svg'
+                  loading='lazy'
+                  alt=''
+                  class='pricing-plan-check-icon'
+                />
+                <div class='pricing-plan-pointer-text-18px'> {item}</div>
+              </>
+            </div>
+          ))
+        }
       </div>
       <div class='home-feature-2-image-container'>
         <div class='image-animation-div'>
@@ -57,9 +45,9 @@ const {title, description, type, image} = Astro.props;
             src={image}
             loading='lazy'
             sizes='(max-width: 767px) 90vw, (max-width: 991px) 73vw, (max-width: 1439px) 43vw, 560px'
-        
             alt=''
-            class='home-feature-hero-image' style="border-radius:10px"
+            class='home-feature-hero-image'
+            style='border-radius:10px'
           />
         </div>
       </div>
@@ -136,6 +124,6 @@ const {title, description, type, image} = Astro.props;
           class='blue-gradient-image'
         />
       </div>
-    </div> 
+    </div>
   </div>
 </div>

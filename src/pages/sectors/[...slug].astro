@@ -1,0 +1,20 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import BaseSector from '../../layouts/BaseSector.astro';
+
+export async function getStaticPaths() {
+	const sectors = await getCollection('sectors');
+	return sectors.map((sector) => ({
+		params: { slug: sector.slug },
+		props: sector,
+	}));
+}
+type Props = CollectionEntry<'sectors'>;
+
+const sector = Astro.props;
+const { Content } = await sector.render();
+---
+
+<BaseSector {...sector.data}>
+	<Content />
+</BaseSector>

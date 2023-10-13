@@ -2,32 +2,36 @@
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
 
-const faq = [
-  {
-    question: "What is Section 1 about?",
-    answer: "Section 1 contains items related to a specific topic. You can find more details here.",
-  },
-  {
-    question: "What does Section 2 include?",
-    answer: "Section 2 includes important tasks that need to be completed. Remember to prioritize your tasks.",
-  },
-  {
-    question: "What does Section 3 contain?",
-    answer: "Section 3 contains items related to a particular project. Make sure to collaborate with your team members.",
-  },
-  {
-    question: "What is Section 4 for?",
-    answer: "Section 4 includes items to buy during the weekend shopping. Don't forget to check for discounts and deals.",
-  },
-   {
-    question: "azdazd does Section 33453 contain?",
-    answer: "Section 3 contains items related to a particular project. Make sure to collaborate with your team members.",
-  },
-   {
-    question: "What does azdazdazv fvfdv 3 contain?",
-    answer: "Section 3 conSDVEVREtains items related to a parERVticular project. Make sure to collaborate with your team members.",
-  },
-];
+const {faq} = Astro.props
+
+const list = faq
+
+// const faq = [
+//   {
+//     question: "What is Section 1 about?",
+//     answer: "Section 1 contains items related to a specific topic. You can find more details here.",
+//   },
+//   {
+//     question: "What does Section 2 include?",
+//     answer: "Section 2 includes important tasks that need to be completed. Remember to prioritize your tasks.",
+//   },
+//   {
+//     question: "What does Section 3 contain?",
+//     answer: "Section 3 contains items related to a particular project. Make sure to collaborate with your team members.",
+//   },
+//   {
+//     question: "What is Section 4 for?",
+//     answer: "Section 4 includes items to buy during the weekend shopping. Don't forget to check for discounts and deals.",
+//   },
+//    {
+//     question: "azdazd does Section 33453 contain?",
+//     answer: "Section 3 contains items related to a particular project. Make sure to collaborate with your team members.",
+//   },
+//    {
+//     question: "What does azdazdazv fvfdv 3 contain?",
+//     answer: "Section 3 conSDVEVREtains items related to a parERVticular project. Make sure to collaborate with your team members.",
+//   },
+// ];
 
 ---
 
@@ -78,13 +82,13 @@ const faq = [
                 <div class=' '>
       <div class='w-layout-grid faq-grid'>
         {
-          faq.map((item) => (
+          list.map((item) => (
             <div class='faq-container'>
               <div class='faq-upper-container'>
                 <div class='faq-question-text'>{item.question}</div>
                 <div class='faq-cross-wrapper'>
                   <img
-                    src='../assets/6259e59720a6347d57a4fe10/6259e59720a634885ea4fe6e_Plus%20Icon.svg'
+                    src='/assets/6259e59720a6347d57a4fe10/6259e59720a634885ea4fe6e_Plus%20Icon.svg'
                     loading='lazy'
                     alt=''
                     class='faq-plus-icon'

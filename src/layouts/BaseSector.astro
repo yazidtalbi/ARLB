@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Actions from "../components/Actions.astro"; 
+import Benefits from "../components/Benefits.astro";
+import FAQ from "../components/FAQ.astro";
+import SubServices from "../components/SubServices.astro";
+import BlogSection from "../components/BlogSection.astro";
+import Cta from "../components/Cta.astro";
+import Projects from "../components/Projects.astro";
+import HeroSector from "../components/HeroSector.astro";
+
+
+import type { CollectionEntry } from 'astro:content';
+
+type Props = CollectionEntry<'sectors'>['data'];
+
+const { title, description, pubDate, updatedDate, heroImage, checklist, faq } = Astro.props;
+
+ 
+---
+
+<BaseLayout title='Innovateurs'>
+  <HeroSector  
+    title={title}
+    checklist={checklist}
+       image={heroImage}/>
+  <Benefits title="Nos expertises garantissent un résultat optimal"/>
+  <SubServices title="Services recommendés" />
+  <Projects />
+  <FAQ faq={faq}/>
+  <BlogSection />
+  <Cta />
+</BaseLayout>
