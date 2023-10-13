@@ -11,7 +11,6 @@ faq: [
  {question: "sssssssssssssssssssssssssss qsdjbklqsdh lkqdq ", answer: "some alt"},
   {question: "qsdjbklqsdh lkqdq ", answer: "some alt"},
    {question: "qsdjbklqsdh lkqdq ", answer: "some alt"},
-    {question: "qsdjbklqsdh lkqdq ", answer: "some alt"},
- 
+    {question: "qsdjbklqsdh lkqdq ", answer: "some alt"}, 
  {question: "someusd sdfsdfsfsrl", answer: "somdddddddddddddddddddddde alt"}
 ]
