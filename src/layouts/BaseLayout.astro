@@ -1,18 +1,13 @@
 ---
+import '../styles/global.css';
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Navigation from "../components/Navigation.astro";
 
-import '../styles/global.css';
-
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
-const { title } = Astro.props;
-
-
-
-
+const { title } = Astro.props ?? { title: "Default Title" };
 ---
 
 <!doctype html>
@@ -39,25 +34,10 @@ const { title } = Astro.props;
 
     <Footer />
 
+
  
-<!-- 	
-    <script is:inline
-      src='https://code.jquery.com/jquery-3.7.1.js'
-      integrity='sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4='
-      crossorigin='anonymous'></script>
- <script is:inline src='../../src/js/file.js' type='text/javascript'></script>  -->
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+ <script is:inline src='../../src/js/file-min.js' type='text/javascript'></script>  
  
-          var a = t.currentTarget;
-          if (
-            !(
-              r.env("design") ||
-              (window.$.mobile && /(?:^|\s)ui-link(?:$|\s)/.test(a.className))
-            )</script>
-            <script>    return function (e) {
-            var i = t(e),
-              o = i instanceof Element ? s(e, i) : e;
-            i && n(o, r.apolloClient, r.stripeStore);
-          };
-        }),</script>
   </body>
 </html>
